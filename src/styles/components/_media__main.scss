@@ -1,0 +1,129 @@
+
+//Tablets
+@media screen and (min-width: 769px) and (max-width: 1100px){
+    .sidebar{
+        width: 100%;
+
+        .sidebar__appName{
+            img{
+                max-width: 30px;
+            }
+            span{
+                font-size: 10px;
+            }
+        }
+
+        .sidebar__links div{
+            flex-direction: column;
+            justify-content: center;
+
+            
+            i{
+                font-size: 22px;
+            }
+            span{
+                font-size: 10px;
+            }
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+
+    .main{
+        height: 100vh;
+        width: 100%;
+        .main__header{
+            padding: 5px;
+        }
+    }
+
+    .sidebar {
+        width: 100%;
+        bottom: 0;
+        height: 10vh;
+        opacity: 1;
+
+        .sidebar__profile .MuiAvatar-root{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+         
+        }
+
+        .sidebar__overlay{
+            padding: 0 8px 0 0;
+        }
+     
+
+        .sidebar__container, .sidebar__overlay{
+            border-radius: 0;
+              
+
+            .sidebar__items{
+                justify-content: space-evenly;
+                flex-direction: row-reverse;
+                height: 100%;
+
+                .sidebar__appName {
+                    display: none;
+                }
+
+                .sidebar__profile img {
+                    max-height: 40px;
+                }
+
+                .sidebar__navigation-links{
+                    max-height: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+
+                    .sidebar__links div{
+                        min-height: 100%;
+                        border-top: 0;
+                    }
+
+                    .sidebar__links div{
+                        min-height: 100%;
+                        border-top: 0;
+                        padding: 0;
+                        font-size: calc(8px + 1vw);
+                        flex-direction: column;
+                        &:last-of-type{
+                            border-bottom: 0;
+                        }
+                    }
+
+                    .sidebar__activelink div{
+                        border-left: 0;
+                        background: none;
+                    }
+
+                }
+
+                .sidebar__navigation-links.mt-5{
+                    margin-top: 0 !important;
+                    
+                }
+            }
+        }
+    }
+
+    .popover{
+        transform: translate3d(-57.75px, 585px, 0px) !important;
+
+        .popover-arrow{
+            transform: translate3d(0px, 119px, 0px) !important;
+        }
+        
+    }
+
+
+
+
+    
+}

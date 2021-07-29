@@ -1,0 +1,64 @@
+html[data-theme="dark"]{
+    .main{
+        background: $dark-gray;
+    }
+    .sidebar{
+        background: $gray;
+    }
+        
+    
+        .main__header{
+        box-shadow: 6px 1px 16px $gray;
+        background: $gray;
+    
+        .main__header-page{
+            img{
+                filter: invert(1);
+            }
+        }
+    
+        .main__header-title{
+            color: $white;
+        }
+    
+        .main__burger-button{
+            .MuiButton-label{
+                color: $white;
+            }
+    
+        }
+    
+        }
+    
+        .categories__card{
+            .categories__category-type{
+                color: $white;
+            }
+            .card{
+                    background: $gray;
+        
+    
+                    .card-text-container{
+                        color: $white;
+                       
+                        .card-title{
+                            color: $white;
+                        }
+                    }
+    
+            }
+    
+            .swiper-button-next, .swiper-button-prev {
+                background: $gray;
+                box-shadow: 0px 0px 15px transparentize($color: $neon-shadow, $amount: .2);
+            }
+    
+            .swiper-button-next::after, .swiper-button-prev::after{
+                color: $neon-shadow;
+                font-size: 20px;
+            }
+    
+        }
+}
+
+

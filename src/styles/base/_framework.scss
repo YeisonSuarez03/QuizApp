@@ -1,0 +1,93 @@
+@mixin CenterColRow($direction: row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin spaceAround {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin createCircle($bgcolor, $size) {
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+    background: $bgcolor;
+}
+
+@mixin boxShadowing($blur) {
+    box-shadow: 0 0 20px $blur #333;
+}
+
+@mixin hideScrollBarThumb {
+    &::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+    
+    &::-webkit-scrollbar:vertical {
+        width:0;
+    }
+
+}
+
+body{
+    font-family: $font-primary;
+}
+
+.btn-primary{
+    background-color: $dark-primary;
+    border-radius: 30px;
+    padding: 10px 35px;
+    border: 0;
+    outline: 0;
+
+    &:hover{
+        background-color: lighten($color: $dark-secondary, $amount: 20);
+    }
+
+    &:active{
+        background-color: $dark-secondary;   
+        
+    }
+}
+
+.btn-outline-secondary{
+    border: 1px solid $dark-secondary;
+    border-radius: 30px;
+    padding: 10px 35px;
+    outline: 0;
+    color: $dark-secondary;
+
+    &:hover{
+        background-color: lighten($color: $dark-secondary, $amount: 20);
+    }
+
+    &:active{
+        background-color: $dark-secondary;   
+        
+    }
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.no-pointer-events{
+    pointer-events: none;
+}
+
+.dark-mode{
+    @mixin name {
+        
+    }
+}
