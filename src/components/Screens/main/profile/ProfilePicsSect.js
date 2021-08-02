@@ -1,12 +1,12 @@
 import { Avatar, Fab } from '@material-ui/core';
 import React, { useContext, useEffect, useMemo, useRef } from 'react';
-import bgPic from '../../../assets/backgrounds/thumb2-4k-geometric-figures-art-abstract-texture-geometry.jpg';
-import { SideContext } from '../../../context/SideContext';
-import { evaluateUrlName } from '../../../helpers/evaluateUrlName';
-import { getFirstLetterName } from '../../../helpers/getFirstLetterName';
+import bgPic from '../../../../assets/backgrounds/thumb2-4k-geometric-figures-art-abstract-texture-geometry.jpg';
+import { SideContext } from '../../../../context/SideContext';
+import { evaluateUrlName } from '../../../../helpers/evaluateUrlName';
+import { getFirstLetterName } from '../../../../helpers/getFirstLetterName';
 import CameraAltIcon from '@material-ui/icons/CameraAlt';
 import EditIcon from '@material-ui/icons/Edit';
-import { getPlacementByWidth } from '../../../helpers/getPlacementByWidth';
+import { getPlacementByWidth } from '../../../../helpers/getPlacementByWidth';
 
 
 export const ProfilePicsSect = () => {

@@ -4,8 +4,7 @@ html[data-theme="dark"]{
     }
     .sidebar{
         background: $gray;
-    }
-        
+    }  
     
         .main__header{
         box-shadow: 6px 1px 16px $gray;
@@ -58,6 +57,34 @@ html[data-theme="dark"]{
                 font-size: 20px;
             }
     
+        }
+
+        .profile__tabs-container{
+            .MuiTab-textColorSecondary{
+                color: $white;
+            }
+            .MuiTab-textColorSecondary.Mui-selected{
+                color: $mui-primary;
+            }
+
+            
+        }
+
+        .profile__achieve-cards{
+            .card{
+                box-shadow: 0px 0px 13px transparentize($color: $mui-primary, $amount: .6);
+                background: $gray;
+            }
+            .card-body{
+                .card-text-container{
+                    .card-title{
+                        color: $white;
+                    }
+                    .card-text{
+                        color: $white;
+                    }
+                }
+            }
         }
 }
 

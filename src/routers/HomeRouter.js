@@ -1,11 +1,10 @@
 import React, { useContext, useEffect } from 'react'
 import { Redirect, Route, Switch } from 'react-router-dom'
-import { CategoryScreen } from '../components/Screens/main/CategoryScreen'
-import { GameCategoriesScreen } from '../components/Screens/main/GameCategoriesScreen'
+import { CategoryScreen } from '../components/Screens/main/categoriesComponents/CategoryScreen'
+import { GameCategoriesScreen } from '../components/Screens/main/categoriesComponents/GameCategoriesScreen'
 import { Header } from '../components/Screens/main/Header'
-import { ProfileScreen } from '../components/Screens/main/ProfileScreen'
-import { Sidebar } from '../components/Screens/main/Sidebar'
-import { TopsScreen } from '../components/Screens/main/TopsScreen'
+import { ProfileScreen } from '../components/Screens/main/profile/ProfileScreen'
+import { TopsScreen } from '../components/Screens/main/topsComponents/TopsScreen'
 import { SideContext } from '../context/SideContext'
 
 export const HomeRouter = () => {

@@ -2,7 +2,7 @@ import React from 'react';
 
 
 import { CategoryTypes } from './CategoryTypes';
-import { categoryTypes } from '../../../maincontent/category types/categoryTypes';
+import { categoryTypes } from '../../../../maincontent/category types/categoryTypes';
 
 
 

@@ -3,11 +3,13 @@ import Tab from '@material-ui/core/Tab';
 import Tabs from '@material-ui/core/Tabs';
 import { Box, Typography } from '@material-ui/core';
 import PropTypes from 'prop-types';
-import { TopThreeIcon } from '../../../customIcons/topThree';
-import { TopRatedIcon } from '../../../customIcons/topRated';
-import { ShowCompIfExists } from './ShowCompIfExists';
+import { TopThreeIcon } from '../../../../customIcons/topThree';
+import { TopRatedIcon } from '../../../../customIcons/topRated';
+import { ShowCompIfExists } from '../ShowCompIfExists';
 import { ProfileAchieves } from './ProfileAchieves';
 import { ProfileLevels } from './ProfileLevels';
+import { ClockIcon } from '../../../../customIcons/clockIcon';
+
 
 
 
@@ -67,15 +69,20 @@ export const ProfileTabs = () => {
           aria-label="scrollable auto tabs example"
           centered
         >
-          <Tab label="Logros" icon={<TopThreeIcon />} {...a11yProps(0)} />
-          <Tab label="Niveles Completados" icon={<TopRatedIcon />} {...a11yProps(1)} />
+          <Tab label="Achieves" icon={<TopThreeIcon />} {...a11yProps(0)} />
+          <Tab label="Levels Completed" icon={<TopRatedIcon />} {...a11yProps(1)} />
+          <Tab label="Daily Challenges" icon={<ClockIcon />} {...a11yProps(2)} />
         </Tabs>
       <TabPanel value={value} index={0}>
-        <ShowCompIfExists element={showAchieves} component={ProfileAchieves} />
+        <ProfileAchieves />
       </TabPanel>
       <TabPanel value={value} index={1}>
         <ShowCompIfExists element={showLevels} component={ProfileLevels} />
       </TabPanel>
+      <TabPanel value={value} index={2}>
+        <ShowCompIfExists element={showLevels} component={ProfileLevels} />
+      </TabPanel>
         </div>
+
     )
 }

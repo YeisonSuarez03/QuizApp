@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import { SideContext } from '../../../context/SideContext';
+import { SideContext } from '../../../../context/SideContext';
 
 export const CategoryCard = ({
     categoryId, 

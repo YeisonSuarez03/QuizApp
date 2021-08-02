@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {Swiper, SwiperSlide} from 'swiper/react';
-import '../../../assets/swipercss/swiper-bundle.css';
+import '../../../../assets/swipercss/swiper-bundle.css';
 import SwiperCore, { Navigation} from 'swiper';
 
 import { CategoryCard } from './CategoryCard';
@@ -43,7 +43,7 @@ export const CategoryTypes = ({title, categoryArray}) => {
            {
                categoryArray.map(category => (
                    <SwiperSlide>
-                        <CategoryCard {...category} />
+                        <CategoryCard key={category.categoryId} {...category} />
                    </SwiperSlide>
                ))
            }

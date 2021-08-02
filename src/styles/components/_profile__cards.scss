@@ -1,0 +1,70 @@
+.profile__achieve-cards{
+    .card{
+        box-shadow: 2px 2px 7px gray;
+        transition: $transition;
+    }
+
+    .profile__achieve-locked{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        border-radius: .25rem;
+        display: flex;
+        justify-content: flex-end;
+        padding: 5px;
+        background: transparentize($color: gray, $amount: .2);
+    }
+
+    .locked-card{
+        filter: grayscale(1);
+    }
+
+    .unlocked-card{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        .MuiAvatar-colorDefault{
+            background-color: $mui-primary;
+        }
+    }
+
+    .card-body{
+        display: flex;   
+
+        .card-icon{
+            width: 40%;
+            @include CenterColRow(column);
+            img{
+                max-width: 200px;
+                width: 100%;
+            }
+        }
+
+
+        .card-text-container{
+            width: 60%;
+            padding: 3%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .card-title{
+                transition: $transition;
+                font-weight: bold;
+                font-size: 26px;
+                text-transform: uppercase;
+            }
+            .card-text{
+                transition: $transition;
+                font-size: 18px;
+            }
+
+            .progress-container{
+                h3{
+                    color: gray;
+                }
+            }
+        }
+    }
+
+}
